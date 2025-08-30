@@ -103,10 +103,9 @@ text Open your browser at: <http://localhost:8501>
 
 ## Getting Help
 
-If you have any questions or need assistance: - Open an Issue in [our
-repository](https://code.swecha.org/ananyakrishna/telugu_sahithi_sahakaari.git) -
-Contact the project maintainer via email: \[your-email@example.com\]
-(replace with maintainer email)
+If you have any questions or need assistance: - Open an Issue in repository
+(https://code.swecha.org/ananyakrishna/telugu_sahithi_sahakaari.git) -
+Contact the project maintainer via email: \[hasiniuppaluri@gmail.com\]
 
 ------------------------------------------------------------------------
 
@@ -117,3 +116,4 @@ Together, we can build a unique open archive and inspire future
 generations!
 
 *Telugu Sahiti Sahakari Team*
+
