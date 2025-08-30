@@ -1,0 +1,53 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.  
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),  
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [1.0.0] - 2025-08-27
+
+### Added
+
+- **Initial Project Release:** First stable release of the "Telugu Sahiti Sahakari" archival platform with community-powered uploads and AI-driven search[attached_file:1][attached_file:2][attached_file:3][attached_file:4][attached_file:5].
+- **Modular Multi-Folder App Structure:**  
+  - Set up a clear backend/frontend split  
+  - Introduced separate folders for `core` (Mokshagna P), `services` (Ananya Krishna), and `frontend/pages` (Srividya Kota).
+- **Streamlit Frontend:**  
+  - Application entry (`app.py`, Nikshitha) for layout, bilingual info, and overall navigation.
+  - Implemented pages for Contribute (`0_contribute.py`), Login (`1_Login.py`), and Telugu Chatbot (`2_telugu_chatbot.py`)[attached_file:1][attached_file:2][attached_file:3][attached_file:4].
+- **Secure Authentication:**  
+  - Complete login/logout workflow using FastAPI backend and session state token management[attached_file:3][attached_file:5].
+- **Contribution Pipeline:**  
+  - File, camera, and direct text upload options with multi-category support.
+  - Instant feedback on upload, JSON preview, and guided data quality checks[attached_file:2].
+- **Swecha Corpus API Integration:**  
+  - Category, record, and contribution management with live corpus APIs[attached_file:6].
+- **AI/NLP Integration:**  
+  - EasyOCR extraction, Gemini-based cleanup, and RAG-powered chatbot for searchable Telugu literature[attached_file:4][attached_file:5][attached_file:7].
+  - Semantic search pipeline using Google Embeddings and FAISS[attached_file:7].
+- **Database Storage:**  
+  - PostgreSQL/Supabase-backed storage for uploaded blog/literature records[attached_file:5].
+- **Documentation:**  
+  - Created `README.md`, `REPORT.md`, and `CONTRIBUTE.md` with clear roles and onboarding steps for all contributors.
+
+### Changed
+
+- **Backend Refactor:**  
+  - Modularized all backend logic by separating API, core logic, database, and vector store into distinct files[attached_file:5][attached_file:6][attached_file:7][attached_file:8].
+- **Improved Session Management:**  
+  - Enhanced stability of session state in Streamlit across authentication flows[attached_file:3].
+- **Error Handling:**  
+  - Added robust error feedback in file uploads, API connectivity, and user login for improved UX[attached_file:2][attached_file:3].
+
+### Fixed
+
+- **Upload Bugs:**  
+  - Fixed multi-format upload failures (camera and large PDFs) and improved chunk upload logic[attached_file:2][attached_file:6].
+- **Category Fetching:**  
+  - Patched reliability issues for category fetching and dynamic display in the contribute page[attached_file:2][attached_file:6].
+- **Token Expiry and Logout:**  
+  - Corrected issues with session clearing and user logout experience in the UI[attached_file:3].
+- **Chatbot Context Scope:**  
+  - Ensured chatbot remains domain-specific and returns user-friendly Telugu responses as fallback[attached_file:4].

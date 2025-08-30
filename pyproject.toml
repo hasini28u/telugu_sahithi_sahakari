@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "telugu-literature-project"
+version = "1.0.0"
+description = "A community-powered AI archive for Telugu literature."
+readme = "README.md"
+authors = [{ name = "Eemani Ananya Krishna", email = "ananyakrish124@gmail.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "langchain-community>=0.3.21",
+]
+
+[project.optional-dependencies]
+backend = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "python-dotenv",
+    "httpx",
+    "easyocr",
+    "numpy<2",
+    "Pillow<10.2.0",
+    "PyMuPDF",
+    "google-generativeai==0.8.5",
+    "psycopg2-binary",
+    "faiss-cpu",
+    "langchain-google-genai==2.1.10",
+    "google-ai-generativelanguage==0.6.15",
+    "langchain",
+]
+frontend = [
+    "streamlit",
+    "requests",
+    "pandas",
+    "streamlit-webrtc",
+]
+dev = [
+    "ruff",
+    "black",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://your-gitlab-url"
+Repository = "https://your-gitlab-url.git"
+"Bug Tracker" = "https://your-gitlab-url/-/issues"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "C", "B"]
+exclude = [".venv",]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend", "frontend"]
