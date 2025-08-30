@@ -40,27 +40,27 @@ A community-powered AI archive focused on preserving and promoting Telugu litera
 
 # File Structure
 
-  backend/
-  │
-  ├─ core/
-  │ ├─ __init__.py
-  │ ├─ settings.py
-  │
-  ├─ services/
-  │ ├─ __init__.py
-  │ ├─ corpus_api.py
-  │ ├─ vector_store.py
-  │ ├─ main.py
-  │
-  frontend/
-  │ ├─ pages/
-  │ │ ├─ 0_contribute.py
-  │ │ ├─ 1_Login.py
-  │ │ ├─ 2_telugu_chatbot.py
-  │ ├─ app.py
-  ├─ .gitignore
-  ├─ pyproject.toml
-  ├─ requirements.txt
+    backend/
+    │
+    ├─ core/
+    │ ├─ __init__.py
+    │ ├─ settings.py
+    │
+    ├─ services/
+    │ ├─ __init__.py
+    │ ├─ corpus_api.py
+    │ ├─ vector_store.py
+    │ ├─ main.py
+    │
+    frontend/
+    │ ├─ pages/
+    │ │ ├─ 0_contribute.py
+    │ │ ├─ 1_Login.py
+    │ │ ├─ 2_telugu_chatbot.py
+    │ ├─ app.py
+    ├─ .gitignore
+    ├─ pyproject.toml
+    ├─ requirements.txt
 
 
 
@@ -110,41 +110,41 @@ A community-powered AI archive focused on preserving and promoting Telugu litera
     
     
     
-    Module Description
-    
-    
-    
-    
-    app.py
-    Main frontend launcher, project intro, styling, top-level UI
-    
-    
-    pages/0_contribute.py
-    Literature upload UI: file, camera, text input, category selection
-    
-    
-    pages/1_Login.py
-    User login/logout UI, session and token management
-    
-    
-    pages/2_telugu_chatbot.py
-    Chatbot UI for conversational Telugu literature questions
-    
-    
-    main.py
-    FastAPI backend application, API routing, endpoints, document pipeline
-    
-    
-    services/corpus_api.py
-    Handles external API communication (Swecha Corpus API, uploads, metadata)
-    
-    
-    services/vector_store.py
-    In-memory FAISS vector store for semantic chunking and search
-    
-    
-    core/settings.py
-    Loads environment variables for central configuration
+  Module Description
+  
+  
+  
+  
+  app.py
+  Main frontend launcher, project intro, styling, top-level UI
+  
+  
+  pages/0_contribute.py
+  Literature upload UI: file, camera, text input, category selection
+  
+  
+  pages/1_Login.py
+  User login/logout UI, session and token management
+  
+  
+  pages/2_telugu_chatbot.py
+  Chatbot UI for conversational Telugu literature questions
+  
+  
+  main.py
+  FastAPI backend application, API routing, endpoints, document pipeline
+  
+  
+  services/corpus_api.py
+  Handles external API communication (Swecha Corpus API, uploads, metadata)
+  
+  
+  services/vector_store.py
+  In-memory FAISS vector store for semantic chunking and search
+  
+  
+  core/settings.py
+  Loads environment variables for central configuration
 
 
 
